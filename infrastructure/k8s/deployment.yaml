@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: lab
-  namespace:  # TODO. Add your kubernetes namespace here. You can find your kubernetes namespace by running command: kubectl config view | grep namespace
+  namespace:  ktu-stud-matasgos
   labels:
     lab: microservices
 spec:
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: tcentric/cloud-lab:v0.1 # TODO. Change this to your image from your Docker Hub repo
+          image: matasgos/cloud-lab:v0.1 # TODO. Change this to your image from your Docker Hub repo
           ports:
             - name: http
               containerPort: 8080
@@ -30,4 +30,4 @@ spec:
               cpu: "50m"
           env:
           - name: GITHUB_USERNAME
-            value:  # TODO. Change this to your username
+            value:  matasgos
