@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: matasgos/cloud-lab:v0.1 # TODO. Change this to your image from your Docker Hub repo
+          image: matasgos/cloud-lab:v0.2 # TODO. Change this to your image from your Docker Hub repo
           ports:
             - name: http
               containerPort: 8080
